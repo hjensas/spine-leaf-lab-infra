@@ -1,0 +1,54 @@
+<network>
+  <name>leafs</name>
+  <forward mode='bridge'/>
+  <bridge name='br-leaf'/>
+  <virtualport type='openvswitch'/>
+  <portgroup name='pxeleaf0'>
+    <vlan>
+      <tag id='600'/>
+    </vlan>
+  </portgroup>
+  <portgroup name='pxeleaf1'>
+    <vlan>
+      <tag id='601'/>
+    </vlan>
+  </portgroup>
+  <portgroup name='pxeleaf2'>
+    <vlan>
+      <tag id='602'/>
+    </vlan>
+  </portgroup>
+  <portgroup name='pxeleaf3'>
+    <vlan>
+      <tag id='603'/>
+    </vlan>
+  </portgroup>
+  <portgroup name='trunk' default='yes'>
+    <vlan trunk='yes'>
+      <tag id='610'/>
+      <tag id='611'/>
+      <tag id='612'/>
+      <tag id='613'/>
+      <tag id='620'/>
+      <tag id='621'/>
+      <tag id='622'/>
+      <tag id='623'/>
+      <tag id='630'/>
+      <tag id='631'/>
+      <tag id='632'/>
+      <tag id='633'/>
+      <tag id='640'/>
+      <tag id='641'/>
+      <tag id='642'/>
+      <tag id='643'/>
+      <tag id='650'/>
+      <tag id='651'/>
+      <tag id='652'/>
+      <tag id='653'/>
+      <tag id='660'/>
+      <tag id='661'/>
+      <tag id='662'/>
+      <tag id='663'/>
+    </vlan>
+  </portgroup>
+</network>
